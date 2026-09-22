@@ -236,35 +236,34 @@ public class JOGO extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setForeground(new java.awt.Color(153, 0, 51));
 
-        titulo.setBackground(new java.awt.Color(204, 255, 204));
-        titulo.setFont(new java.awt.Font("Ravie", 3, 24)); // NOI18N
-        titulo.setForeground(new java.awt.Color(51, 102, 0));
-        titulo.setText("CAMPO MINADO DA DANOS MORAIS");
+        titulo.setBackground(new java.awt.Color(153, 51, 0));
+        titulo.setFont(new java.awt.Font("NSimSun", 3, 36)); // NOI18N
+        titulo.setText("CAMPO MINADO - DANOS MORAIS");
 
-        BTN_iniciar.setBackground(new java.awt.Color(204, 255, 204));
-        BTN_iniciar.setFont(new java.awt.Font("Ravie", 0, 20)); // NOI18N
-        BTN_iniciar.setForeground(new java.awt.Color(51, 102, 0));
+        BTN_iniciar.setBackground(new java.awt.Color(153, 51, 0));
+        BTN_iniciar.setFont(new java.awt.Font("NSimSun", 1, 20)); // NOI18N
+        BTN_iniciar.setForeground(new java.awt.Color(255, 255, 255));
         BTN_iniciar.setText("INICIAR");
         BTN_iniciar.addActionListener(this::BTN_iniciarActionPerformed);
 
         TF_tempo.setEditable(false);
-        TF_tempo.setBackground(new java.awt.Color(0, 0, 0));
-        TF_tempo.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        TF_tempo.setForeground(new java.awt.Color(204, 0, 0));
+        TF_tempo.setBackground(new java.awt.Color(153, 51, 0));
+        TF_tempo.setFont(new java.awt.Font("NSimSun", 1, 12)); // NOI18N
+        TF_tempo.setForeground(new java.awt.Color(255, 255, 255));
         TF_tempo.setText("00:00");
 
-        painel_campo.setBackground(new java.awt.Color(204, 255, 204));
+        painel_campo.setBackground(new java.awt.Color(153, 51, 0));
         painel_campo.setForeground(new java.awt.Color(51, 102, 0));
 
         javax.swing.GroupLayout painel_campoLayout = new javax.swing.GroupLayout(painel_campo);
         painel_campo.setLayout(painel_campoLayout);
         painel_campoLayout.setHorizontalGroup(
             painel_campoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 669, Short.MAX_VALUE)
         );
         painel_campoLayout.setVerticalGroup(
             painel_campoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 438, Short.MAX_VALUE)
+            .addGap(0, 434, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -274,31 +273,35 @@ public class JOGO extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(painel_campo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BTN_iniciar))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 563, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(TF_tempo))
-                            .addComponent(BTN_iniciar))))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(TF_tempo, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addComponent(painel_campo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(titulo)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(BTN_iniciar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(TF_tempo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(titulo)
+                        .addGap(56, 56, 56)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(BTN_iniciar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(TF_tempo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(painel_campo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(painel_campo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24))
         );
 
         pack();
